@@ -1,0 +1,73 @@
+// Setting color variables
+$primaryColor: #1ed760;
+$secondaryColor: #666;
+$border-color: #eee;
+$light: #fff;
+
+// Range of Margin and padding values
+$pm5: 5px;
+$pm10: 10px;
+$pm20: 20px;
+
+.p5 { padding: $pm5;}
+.p10 { padding: $pm10;}
+.p20 { padding: $pm20;}
+
+@mixin box-shadow($values){
+    -webkit-box-shadow: $values;
+    -moz-box-shadow: $values;
+    box-shadow: $values;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.4;
+	color: $secondaryColor;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0 0 5px 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+}
+
+a {
+    color: $primaryColor;
+    &:hover {
+			color: $secondaryColor;
+			text-decoration: none;
+    }
+}
+
+.form-control {
+	background: $secondaryColor;
+	border: none;
+	color: $light;
+	@include box-shadow(none)
+}
+
+#header {
+	background: $primaryColor;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: $light;
+}
+
+.artiste {
+	h2 {
+		font-size: 16px;
+	}
+	border: 1px solid $border-color;
+	padding: 10px;
+	.meta {
+		margin: 0 20px 0 0;
+	}
+}
