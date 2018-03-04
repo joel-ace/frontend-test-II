@@ -8,3 +8,4 @@ Getting Started
   - Run `npm install` to install all dependencies
   - Run `npm start` to run the application
 	- Access site using `http://localhost:5000/`
+	- To add a giphy, use a forward slash and the keyword. E.g `/good` `/food`
